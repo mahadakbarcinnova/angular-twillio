@@ -1,0 +1,17 @@
+<p>Video call</p>
+<form>
+<div id='participants'>
+  <div id='localParticipant' class='participant'>
+    <div class='identity' id='localIdentity'>{{username}}</div>
+  </div>
+  <div id='remoteParticipant' class='participant'>
+    <div class='identity' id='remoteIdentity'>{{remoteUserName}}</div>
+  </div>
+</div>
+<div id='login'>
+  <input id='username' type='text' ngModel name="username" placeholder='Enter your name...' required>
+  <input id='username' type='text' ngModel name="roomName" placeholder='Enter your room name...' required>
+  <button type="button" value="connect" (click)="call()">Call</button>
+  <button type="button" value="connect" (click)="end()">End</button>
+</div>
+</form>
